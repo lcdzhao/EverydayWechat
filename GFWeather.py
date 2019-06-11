@@ -89,7 +89,7 @@ class GFWeather:
             if os.environ.get('MODE') == 'server':
                 itchat.auto_login(enableCmdQR=2)
             else:
-                itchat.auto_login()
+                itchat.auto_login(enableCmdQR=True)
             if online():
                 print('登录成功')
                 return True
